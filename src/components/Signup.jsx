@@ -11,7 +11,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://a79a774f987f.ngrok-free.app/api/auth/signup", {
+      const res = await axios.post("https://mab-authenticator-backend.onrender.com/api/auth/signup", {
         username,
         email,
         password,
