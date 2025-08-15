@@ -10,7 +10,7 @@ function Signin() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:7000/api/auth/signin", {
+            const res = await axios.post("https://a79a774f987f.ngrok-free.app/api/auth/signin", {
                 email,
                 password,
             });
