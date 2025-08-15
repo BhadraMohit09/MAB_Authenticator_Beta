@@ -22,7 +22,7 @@ function Signin() {
             setMessage("Login successful!");
             window.location.href = "/dashboard";
         } catch (err) {
-            setMessage(err.response?.data?.error || "Login failed");
+            setMessage(err.response?.data?.error || "Server is down, please try again later.");
         }
     };
 
