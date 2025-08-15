@@ -11,6 +11,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+        // Send signup request to backend
       const res = await axios.post("https://mab-authenticator-backend.onrender.com/api/auth/signup", {
         username,
         email,
